@@ -1926,7 +1926,7 @@
 .bor-ltr, .bor-lrt, .bor-trl, .bor-tlr, .bor-rlt, .bor-rtl
 {
 	border-style: solid;
-	border-color: rgba(0,0,0,0.4);
+	border-color: gray;
 }
 .bor
 {
@@ -1950,7 +1950,8 @@
 .bor-blt, .bor-btl, .bor-ltb, .bor-lbt, .bor-tbl, .bor-tlb { border-bottom-width: 1px; border-left-width: 1px; border-top-width: 1px; }
 .bor-ltr, .bor-lrt, .bor-trl, .bor-tlr, .bor-rlt, .bor-rtl { border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; }
 
-.bor-black {border-color: black}
-.bor-red {border-color: red}
-.bor-blue {border-color: blue}
-.bor-green {border-color: green}
+.bor.__red {border-color: tomato}
+.bor.__orange {border-color: coral}
+.bor.__green {border-color: olive}
+.bor.__blue {border-color: royalblue}
+.bor.__purple {border-color: slateblue}
