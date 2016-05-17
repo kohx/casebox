@@ -2,13 +2,22 @@
 <html lang="ja">
     <head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta charset="UTF-8" />
+        <title>title</title>
         <title>casebox</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="css, frexbox, gridsystem" />
+        <meta name="description" content="" />
+        <meta name="author" content="kohei okuda" />
+        <meta name="generator" content="css flex box gridsystem." />
 
         <!-- styles -->
 		<link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet' type='text/css'>
         <link href="css/reset.css" rel="stylesheet" type="text/css" />
 		<link href="css/casebox.css" rel="stylesheet" type="text/css"/>
+		<link href="css/media.css" rel="stylesheet" type="text/css"/>
+
+		<!-- script -->
+		<script src="js/jquery-1.12.3.min.js" type="text/javascript"></script>
 
 		<style>
 			html
@@ -56,21 +65,59 @@
 				height: 3.0rem;
 				width: 3.0rem;
 			}
+			.header-title
+			{
+				text-align: center;
+				font-size: 2.4rem;
+				line-height: 1.6;
+			}
+			.header-catch
+			{
+				text-align: center;
+			}
+			.title
+			{
+				text-transform: capitalize;
+				font-size: 2.0rem;
+				line-height: 1.6;
+			}
 		</style>
+
+		<script>
+			$(function () {
+
+				$('<div />')
+						.addClass('ww')
+						.css({
+							'color': '#fff',
+							'padding': '0.2rem 0.8rem',
+							'position': 'fixed',
+							'top': 0,
+							'right': 0,
+							'border-radius': '0 0 0 4px / 0 0 0 4px'
+						})
+						.text($(window).outerWidth())
+						.appendTo('body');
+
+				$(window).resize(function () {
+					$('.ww').text($(window).outerWidth());
+				});
+			});
+		</script>
     </head>
 
     <body>
 
-		<header class="header mar3-b bor">
-			<h1>case box</h1>
-			<p>css flex box gridsystem</p>
+		<header class="header mar3-b bor-b">
+			<h1 class="header-title">case box</h1>
+			<p class="header-catch">css flex box gridsystem</p>
 		</header>
 
 		<div class="wrapper">
 
 			<!--basic-->
 			<section class="mar3-b">
-				<h2>basic</h2>
+				<h2 class="title">basic</h2>
 
 				<div class="case bor">
 					<div class="box1"><div class="mar1 pad1 bor">box1</div></div>
@@ -123,7 +170,7 @@
 
 			<!--box0-->
 			<section class="mar3-b">
-				<h2>box0</h2>
+				<h2 class="title">box0</h2>
 
 				<div class="case bor-tlr">
 					<div class="box3-1"><div class="mar1 pad1 bor">box3-1</div></div>
@@ -155,7 +202,7 @@
 
 			<!--nest-->
 			<section class="mar3-b">
-				<h2>nest</h2>
+				<h2 class="title">nest</h2>
 
 				<div class="case mar3-b bor">
 					<div class="box2-1 case"><div class="box1 mar1 pad1 bor">box2-1</div></div>
@@ -200,7 +247,7 @@
 
 			<!--nagetive-->
 			<section class="mar3-b">
-				<h2>nagetive</h2>
+				<h2 class="title">nagetive</h2>
 
 				<div class="case mar3-b bor">
 					<div class="box2-1 case">
@@ -255,7 +302,7 @@
 
 			<!--prefix sufix-->
 			<section class="mar3-b">
-				<h2>prefix sufix</h2>
+				<h2 class="title">prefix sufix</h2>
 
 				<div class="case mar3-b bor">
 					<div class="box5-1 suf5-4"><div class="box1 mar1 pad1 bor">suf5-2 &amp; box5-1</div></div>
@@ -277,9 +324,29 @@
 
 			</section>
 
+			<!--responsive-->
+			<section class="mar3-b">
+				<h2 class="title">responsive</h2>
+
+				<div class="box1 case bor">
+					<div class="box4-1 lbox3-1 mbox2-1 sbox1"><div class="mar1 pad1 bor">box4-1 &amp; mbox2-1 &amp; sbox1</div></div>
+					<div class="box4-1 lbox3-1 mbox2-1 sbox1"><div class="mar1 pad1 bor">box4-1 &amp; mbox2-1 &amp; sbox1</div></div>
+					<div class="box4-1 lbox3-1 mbox2-1 sbox1"><div class="mar1 pad1 bor">box4-1 &amp; mbox2-1 &amp; sbox1</div></div>
+					<div class="box4-1 lbox3-1 mbox2-1 sbox1"><div class="mar1 pad1 bor">box4-1 &amp; mbox2-1 &amp; sbox1</div></div>
+					<div class="box4-1 lbox3-1 mbox2-1 sbox1"><div class="mar1 pad1 bor">box4-1 &amp; mbox2-1 &amp; sbox1</div></div>
+					<div class="box4-1 lbox3-1 mbox2-1 sbox1"><div class="mar1 pad1 bor">box4-1 &amp; mbox2-1 &amp; sbox1</div></div>
+					<div class="box4-1 lbox3-1 mbox2-1 sbox1"><div class="mar1 pad1 bor">box4-1 &amp; mbox2-1 &amp; sbox1</div></div>
+					<div class="box4-1 lbox3-1 mbox2-1 sbox1"><div class="mar1 pad1 bor">box4-1 &amp; mbox2-1 &amp; sbox1</div></div>
+					<div class="box4-1 lbox3-1 mbox2-1 sbox1"><div class="mar1 pad1 bor">box4-1 &amp; mbox2-1 &amp; sbox1</div></div>
+					<div class="box4-1 lbox3-1 mbox2-1 sbox1"><div class="mar1 pad1 bor">box4-1 &amp; mbox2-1 &amp; sbox1</div></div>
+					<div class="box4-1 lbox3-1 mbox2-1 sbox1"><div class="mar1 pad1 bor">box4-1 &amp; mbox2-1 &amp; sbox1</div></div>
+					<div class="box4-1 lbox3-1 mbox2-1 sbox1"><div class="mar1 pad1 bor">box4-1 &amp; mbox2-1 &amp; sbox1</div></div>
+				</div>
+			</section>
+
 			<!--show hide-->
 			<section class="mar3-b">
-				<h2>show hide</h2>
+				<h2 class="title">show hide</h2>
 
 				<div class="box1 case bor">
 					<div class="box4-1"><div class="sho-o mar1 pad1 bor">sho-o</div></div>
@@ -292,7 +359,7 @@
 					<div class="box4-1"><div class="hid-m mar1 pad1 bor">sho-m</div></div>
 					<div class="box4-1"><div class="hid-s mar1 pad1 bor">sho-s</div></div>
 				</div>
-				
+
 				<div class="box1 case bor-brl">
 					<div class="box6-1"><div class="sho-om mar1 pad1 bor">sho-om / sho-mo</div></div>
 					<div class="box6-1"><div class="sho-ls mar1 pad1 bor">sho-ls / sho-sl</div></div>
@@ -308,7 +375,7 @@
 					<div class="box6-1"><div class="hid-ol mar1 pad1 bor">hid-ol / hid-lo</div></div>
 					<div class="box6-1"><div class="hid-sm mar1 pad1 bor">hid-sm / hid-ms</div></div>
 				</div>
-				
+
 				<div class="box1 case bor-brl">
 					<div class="box4-1"><div class="sho-olm mar1 pad1 bor">sho-olm / sho-oml / sho-lmo ...</div></div>
 					<div class="box4-1"><div class="sho-lms mar1 pad1 bor">sho-lms / sho-lsm / sho-msl ...</div></div>
@@ -324,7 +391,7 @@
 
 			<!--height-->
 			<section class="mar3-b">
-				<h2>height</h2>
+				<h2 class="title">height</h2>
 
 				<div class="case bor">
 					<div class="box5-1 case"><div class="box1 mar1 pad1 bor">
@@ -376,7 +443,7 @@
 
 			<!--horizontal vertical-->
 			<section class="mar3-b">
-				<h2>horizontal vertical</h2>
+				<h2 class="title">horizontal vertical</h2>
 
 				<div class="case bor">
 					<div class="box4-1 case"><div class="box1 mar1 pad1 bor">
@@ -420,7 +487,7 @@
 
 			<!--margin padding-->
 			<section>
-				<h2>margin padding</h2>
+				<h2 class="title">margin padding</h2>
 
 				<div class="case bor mar1-b">
 					<div class="box8-1 pad1">
@@ -624,7 +691,7 @@
 
 			<!--border-->
 			<section class="mar3-b">
-				<h2>border</h2>
+				<h2 class="title">border</h2>
 
 				<div class="case mar3-b bor">
 					<div class="box8-1 pad1">
