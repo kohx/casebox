@@ -140,7 +140,7 @@
 
 /*---------------------------------------------------------------------------------
 	over [o] 
-	over desktop 1201px <=
+	over desktop >= 1201px
 ---------------------------------------------------------------------------------*/
 /* numbers */
 .box0 {flex: 1}
@@ -813,34 +813,34 @@
 	.lneg3-rl, .lneg3-lr {margin-left: -3.0rem; margin-right: -3.0rem;}
 
 	/* show hide */
-	.lsho-o {display: inherit;}
-	.lsho-l {display: none;}
+	.lsho-o {display: none;}
+	.lsho-l {display: inherit;}
 	.lsho-m {display: none;}
 	.lsho-s {display: none;}
-	.lsho-om, .lsho-mo {display: inherit;}
-	.lsho-ls, .lsho-sl {display: none;}
-	.lsho-os, .lsho-so {display: inherit;}
-	.lsho-ml, .lsho-lm {display: none;}
+	.lsho-om, .lsho-mo {display: none;}
+	.lsho-ls, .lsho-sl {display: inherit;}
+	.lsho-os, .lsho-so {display: none;}
+	.lsho-ml, .lsho-lm {display: inherit;}
 	.lsho-ol, .lsho-lo {display: inherit;}
 	.lsho-sm, .lsho-ms {display: none;}
 	.lsho-olm, .lsho-oml, .lsho-lmo, .lsho-lom, .lsho-mol, .lsho-mlo {display: inherit;}
-	.lsho-lms, .lsho-lsm, .lsho-msl, .lsho-mls, .lsho-slm, .lsho-sml {display: none;}
-	.lsho-mso, .lsho-mos, .lsho-som, .lsho-smo, .lsho-oms, .lsho-osm {display: inherit;}
+	.lsho-lms, .lsho-lsm, .lsho-msl, .lsho-mls, .lsho-slm, .lsho-sml {display: inherit;}
+	.lsho-mso, .lsho-mos, .lsho-som, .lsho-smo, .lsho-oms, .lsho-osm {display: none;}
 	.lsho-sol, .lsho-slo, .lsho-ols, .lsho-osl, .lsho-lso, .lsho-los {display: inherit;}
 
-	.lhid-o {display: none;}
-	.lhid-l {display: inherit;}
+	.lhid-o {display: inherit;}
+	.lhid-l {display: none;}
 	.lhid-m {display: inherit;}
 	.lhid-s {display: inherit;}
-	.lhid-om, .lhid-mo {display: none;}
-	.lhid-ls, .lhid-sl {display: inherit;}
-	.lhid-os, .lhid-so {display: none;}
-	.lhid-ml, .lhid-lm {display: inherit;}
+	.lhid-om, .lhid-mo {display: inherit;}
+	.lhid-ls, .lhid-sl {display: none;}
+	.lhid-os, .lhid-so {display: inherit;}
+	.lhid-ml, .lhid-lm {display: none;}
 	.lhid-ol, .lhid-lo {display: none;}
 	.lhid-sm, .lhid-ms {display: inherit;}
 	.lhid-olm, .lhid-oml, .lhid-lmo, .lhid-lom, .lhid-mol, .lhid-mlo {display: none;}
-	.lhid-lms, .lhid-lsm, .lhid-msl, .lhid-mls, .lhid-slm, .lhid-sml {display: inherit;}
-	.lhid-mso, .lhid-mos, .lhid-som, .lhid-smo, .lhid-oms, .lhid-osm {display: none;}
+	.lhid-lms, .lhid-lsm, .lhid-msl, .lhid-mls, .lhid-slm, .lhid-sml {display: none;}
+	.lhid-mso, .lhid-mos, .lhid-som, .lhid-smo, .lhid-oms, .lhid-osm {display: inherit;}
 	.lhid-sol, .lhid-slo, .lhid-ols, .lhid-osl, .lhid-lso, .lhid-los {display: none;}
 }
 
@@ -1521,35 +1521,35 @@
 	.mneg3-rl, .mneg3-lr {margin-left: -3.0rem; margin-right: -3.0rem;}
 
 	/* show hide */
-	.msho-o {display: inherit;}
+	.msho-o {display: none;}
 	.msho-l {display: none;}
-	.msho-m {display: none;}
+	.msho-m {display: inherit;}
 	.msho-s {display: none;}
 	.msho-om, .msho-mo {display: inherit;}
 	.msho-ls, .msho-sl {display: none;}
-	.msho-os, .msho-so {display: inherit;}
-	.msho-ml, .msho-lm {display: none;}
-	.msho-ol, .msho-lo {display: inherit;}
-	.msho-sm, .msho-ms {display: none;}
+	.msho-os, .msho-so {display: none;}
+	.msho-ml, .msho-lm {display: inherit;}
+	.msho-ol, .msho-lo {display: none;}
+	.msho-sm, .msho-ms {display: inherit;}
 	.msho-olm, .msho-oml, .msho-lmo, .msho-lom, .msho-mol, .msho-mlo {display: inherit;}
-	.msho-lms, .msho-lsm, .msho-msl, .msho-mls, .msho-slm, .msho-sml {display: none;}
+	.msho-lms, .msho-lsm, .msho-msl, .msho-mls, .msho-slm, .msho-sml {display: inherit;}
 	.msho-mso, .msho-mos, .msho-som, .msho-smo, .msho-oms, .msho-osm {display: inherit;}
-	.msho-sol, .msho-slo, .msho-ols, .msho-osl, .msho-lso, .msho-los {display: inherit;}
+	.msho-sol, .msho-slo, .msho-ols, .msho-osl, .msho-lso, .msho-los {display: none;}
 
-	.mhid-o {display: none;}
+	.mhid-o {display: inherit;}
 	.mhid-l {display: inherit;}
-	.mhid-m {display: inherit;}
+	.mhid-m {display: none;}
 	.mhid-s {display: inherit;}
 	.mhid-om, .mhid-mo {display: none;}
 	.mhid-ls, .mhid-sl {display: inherit;}
-	.mhid-os, .mhid-so {display: none;}
-	.mhid-ml, .mhid-lm {display: inherit;}
-	.mhid-ol, .mhid-lo {display: none;}
-	.mhid-sm, .mhid-ms {display: inherit;}
+	.mhid-os, .mhid-so {display: inherit;}
+	.mhid-ml, .mhid-lm {display: none;}
+	.mhid-ol, .mhid-lo {display: inherit;}
+	.mhid-sm, .mhid-ms {display: none;}
 	.mhid-olm, .mhid-oml, .mhid-lmo, .mhid-lom, .mhid-mol, .mhid-mlo {display: none;}
-	.mhid-lms, .mhid-lsm, .mhid-msl, .mhid-mls, .mhid-slm, .mhid-sml {display: inherit;}
+	.mhid-lms, .mhid-lsm, .mhid-msl, .mhid-mls, .mhid-slm, .mhid-sml {display: none;}
 	.mhid-mso, .mhid-mos, .mhid-som, .mhid-smo, .mhid-oms, .mhid-osm {display: none;}
-	.mhid-sol, .mhid-slo, .mhid-ols, .mhid-osl, .mhid-lso, .mhid-los {display: none;}
+	.mhid-sol, .mhid-slo, .mhid-ols, .mhid-osl, .mhid-lso, .mhid-los {display: inherit;}
 }
 
 /*---------------------------------------------------------------------------------
@@ -1875,33 +1875,33 @@
 	.sneg3-rl, .sneg3-lr {margin-left: -3.0rem; margin-right: -3.0rem;}
 
 	/* show hide */
-	.ssho-o {display: inherit;}
+	.ssho-o {display: none;}
 	.ssho-l {display: none;}
 	.ssho-m {display: none;}
-	.ssho-s {display: none;}
-	.ssho-om, .ssho-mo {display: inherit;}
-	.ssho-ls, .ssho-sl {display: none;}
+	.ssho-s {display: inherit;}
+	.ssho-om, .ssho-mo {display: none;}
+	.ssho-ls, .ssho-sl {display: inherit;}
 	.ssho-os, .ssho-so {display: inherit;}
 	.ssho-ml, .ssho-lm {display: none;}
-	.ssho-ol, .ssho-lo {display: inherit;}
-	.ssho-sm, .ssho-ms {display: none;}
-	.ssho-olm, .ssho-oml, .ssho-lmo, .ssho-lom, .ssho-mol, .ssho-mlo {display: inherit;}
-	.ssho-lms, .ssho-lsm, .ssho-msl, .ssho-mls, .ssho-slm, .ssho-sml {display: none;}
-	.ssho-mso, .ssho-mos, .ssho-som, .ssho-smo, .ssho-oms, .ssho-osm {display: inherit;}
+	.ssho-ol, .ssho-lo {display: none;}
+	.ssho-sm, .ssho-ms {display: inherit;}
+	.ssho-olm, .ssho-oml, .ssho-lmo, .ssho-lom, .ssho-mol, .ssho-mlo {display: none;}
+	.ssho-lms, .ssho-lsm, .ssho-msl, .ssho-mls, .ssho-slm, .ssho-sml {display: inherit;}
+	.ssho-mso, .ssho-mos, .ssho-som, .ssho-smo, .ssho-oms, .ssho-osm {display: none;}
 	.ssho-sol, .ssho-slo, .ssho-ols, .ssho-osl, .ssho-lso, .ssho-los {display: inherit;}
 
-	.shid-o {display: none;}
+	.shid-o {display: inherit;}
 	.shid-l {display: inherit;}
 	.shid-m {display: inherit;}
-	.shid-s {display: inherit;}
-	.shid-om, .shid-mo {display: none;}
-	.shid-ls, .shid-sl {display: inherit;}
+	.shid-s {display: none;}
+	.shid-om, .shid-mo {display: inherit;}
+	.shid-ls, .shid-sl {display: none;}
 	.shid-os, .shid-so {display: none;}
 	.shid-ml, .shid-lm {display: inherit;}
-	.shid-ol, .shid-lo {display: none;}
-	.shid-sm, .shid-ms {display: inherit;}
-	.shid-olm, .shid-oml, .shid-lmo, .shid-lom, .shid-mol, .shid-mlo {display: none;}
-	.shid-lms, .shid-lsm, .shid-msl, .shid-mls, .shid-slm, .shid-sml {display: inherit;}
+	.shid-ol, .shid-lo {display: inherit;}
+	.shid-sm, .shid-ms {display: none;}
+	.shid-olm, .shid-oml, .shid-lmo, .shid-lom, .shid-mol, .shid-mlo {display: inherit;}
+	.shid-lms, .shid-lsm, .shid-msl, .shid-mls, .shid-slm, .shid-sml {display: none;}
 	.shid-mso, .shid-mos, .shid-som, .shid-smo, .shid-oms, .shid-osm {display: none;}
 	.shid-sol, .shid-slo, .shid-ols, .shid-osl, .shid-lso, .shid-los {display: none;}
 }
