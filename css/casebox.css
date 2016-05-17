@@ -121,6 +121,7 @@
 	grid
 =================================================================================*/
 
+/* global */
 [class*="box0"]
 [class*="box1"],[class*="box1-"],[class*="box2-"], [class*="box3-"], [class*="box4-"], [class*="box5-"], [class*="box6-"],[class*="box7-"], [class*="box8-"], [class*="box9-"], [class*="box10-"], [class*="box11-"], [class*="box12-"],
 [class*="lbox1"],[class*="lbox1-"],[class*="lbox2-"], [class*="lbox3-"], [class*="lbox4-"], [class*="lbox5-"], [class*="lbox6-"],[class*="lbox7-"], [class*="lbox8-"], [class*="lbox9-"], [class*="lbox10-"], [class*="lbox11-"], [class*="lbox12-"],
@@ -131,6 +132,7 @@
 	word-break: break-all;
 }
 
+/* case */
 .case
 {
 	display: flex;
@@ -142,7 +144,8 @@
 	over [o] 
 	over desktop >= 1201px
 ---------------------------------------------------------------------------------*/
-/* numbers */
+/* box */
+
 .box0 {flex: 1}
 .box1, .box1-1 {flex-basis: 100%;}
 .box2-1 {flex-basis: 50%;}
@@ -459,43 +462,13 @@
 .neg2-rl, .neg2-lr {margin-left: -2.0rem; margin-right: -2.0rem;}
 .neg3-rl, .neg3-lr {margin-left: -3.0rem; margin-right: -3.0rem;}
 
-/* show hide */
-.sho-o {display: inherit;}
-.sho-l {display: none;}
-.sho-m {display: none;}
-.sho-s {display: none;}
-.sho-om, .sho-mo {display: inherit;}
-.sho-ls, .sho-sl {display: none;}
-.sho-os, .sho-so {display: inherit;}
-.sho-ml, .sho-lm {display: none;}
-.sho-ol, .sho-lo {display: inherit;}
-.sho-sm, .sho-ms {display: none;}
-.sho-olm, .sho-oml, .sho-lmo, .sho-lom, .sho-mol, .sho-mlo {display: inherit;}
-.sho-lms, .sho-lsm, .sho-msl, .sho-mls, .sho-slm, .sho-sml {display: none;}
-.sho-mso, .sho-mos, .sho-som, .sho-smo, .sho-oms, .sho-osm {display: inherit;}
-.sho-sol, .sho-slo, .sho-ols, .sho-osl, .sho-lso, .sho-los {display: inherit;}
-
-.hid-o {display: none;}
-.hid-l {display: inherit;}
-.hid-m {display: inherit;}
-.hid-s {display: inherit;}
-.hid-om, .hid-mo {display: none;}
-.hid-ls, .hid-sl {display: inherit;}
-.hid-os, .hid-so {display: none;}
-.hid-ml, .hid-lm {display: inherit;}
-.hid-ol, .hid-lo {display: none;}
-.hid-sm, .hid-ms {display: inherit;}
-.hid-olm, .hid-oml, .hid-lmo, .hid-lom, .hid-mol, .hid-mlo {display: none;}
-.hid-lms, .hid-lsm, .hid-msl, .hid-mls, .hid-slm, .hid-sml {display: inherit;}
-.hid-mso, .hid-mos, .hid-som, .hid-smo, .hid-oms, .hid-osm {display: none;}
-.hid-sol, .hid-slo, .hid-ols, .hid-osl, .hid-lso, .hid-los {display: none;}
-
 /*---------------------------------------------------------------------------------
 	large [l] 
 	desktop  <= 1200px
 ---------------------------------------------------------------------------------*/
 @media (max-width: 1200px) {
-	/* numbers */
+
+	/* box */
 	.lbox0 {flex: 1}
 	.lbox1, .lbox1-1 {flex-basis: 100%;}
 	.lbox2-1 {flex-basis: 50%;}
@@ -811,37 +784,6 @@
 	.lneg1-rl, .lneg1-lr {margin-left: -1.0rem; margin-right: -1.0rem;}
 	.lneg2-rl, .lneg2-lr {margin-left: -2.0rem; margin-right: -2.0rem;}
 	.lneg3-rl, .lneg3-lr {margin-left: -3.0rem; margin-right: -3.0rem;}
-
-	/* show hide */
-	.lsho-o {display: none;}
-	.lsho-l {display: inherit;}
-	.lsho-m {display: none;}
-	.lsho-s {display: none;}
-	.lsho-om, .lsho-mo {display: none;}
-	.lsho-ls, .lsho-sl {display: inherit;}
-	.lsho-os, .lsho-so {display: none;}
-	.lsho-ml, .lsho-lm {display: inherit;}
-	.lsho-ol, .lsho-lo {display: inherit;}
-	.lsho-sm, .lsho-ms {display: none;}
-	.lsho-olm, .lsho-oml, .lsho-lmo, .lsho-lom, .lsho-mol, .lsho-mlo {display: inherit;}
-	.lsho-lms, .lsho-lsm, .lsho-msl, .lsho-mls, .lsho-slm, .lsho-sml {display: inherit;}
-	.lsho-mso, .lsho-mos, .lsho-som, .lsho-smo, .lsho-oms, .lsho-osm {display: none;}
-	.lsho-sol, .lsho-slo, .lsho-ols, .lsho-osl, .lsho-lso, .lsho-los {display: inherit;}
-
-	.lhid-o {display: inherit;}
-	.lhid-l {display: none;}
-	.lhid-m {display: inherit;}
-	.lhid-s {display: inherit;}
-	.lhid-om, .lhid-mo {display: inherit;}
-	.lhid-ls, .lhid-sl {display: none;}
-	.lhid-os, .lhid-so {display: inherit;}
-	.lhid-ml, .lhid-lm {display: none;}
-	.lhid-ol, .lhid-lo {display: none;}
-	.lhid-sm, .lhid-ms {display: inherit;}
-	.lhid-olm, .lhid-oml, .lhid-lmo, .lhid-lom, .lhid-mol, .lhid-mlo {display: none;}
-	.lhid-lms, .lhid-lsm, .lhid-msl, .lhid-mls, .lhid-slm, .lhid-sml {display: none;}
-	.lhid-mso, .lhid-mos, .lhid-som, .lhid-smo, .lhid-oms, .lhid-osm {display: inherit;}
-	.lhid-sol, .lhid-slo, .lhid-ols, .lhid-osl, .lhid-lso, .lhid-los {display: none;}
 }
 
 /*---------------------------------------------------------------------------------
@@ -849,7 +791,8 @@
 	over desktop <= 992px
 ---------------------------------------------------------------------------------*/
 @media (max-width: 992px) {
-	/* numbers */
+
+	/* box */
 	.mbox0 {flex: 1}
 	.mbox1, .mbox1-1 {flex-basis: 100%;}
 	.mbox2-1 {flex-basis: 50%;}
@@ -1165,37 +1108,6 @@
 	.mneg1-rl, .mneg1-lr {margin-left: -1.0rem; margin-right: -1.0rem;}
 	.mneg2-rl, .mneg2-lr {margin-left: -2.0rem; margin-right: -2.0rem;}
 	.mneg3-rl, .mneg3-lr {margin-left: -3.0rem; margin-right: -3.0rem;}
-
-	/* show hide */
-	.msho-o {display: inherit;}
-	.msho-l {display: none;}
-	.msho-m {display: none;}
-	.msho-s {display: none;}
-	.msho-om, .msho-mo {display: inherit;}
-	.msho-ls, .msho-sl {display: none;}
-	.msho-os, .msho-so {display: inherit;}
-	.msho-ml, .msho-lm {display: none;}
-	.msho-ol, .msho-lo {display: inherit;}
-	.msho-sm, .msho-ms {display: none;}
-	.msho-olm, .msho-oml, .msho-lmo, .msho-lom, .msho-mol, .msho-mlo {display: inherit;}
-	.msho-lms, .msho-lsm, .msho-msl, .msho-mls, .msho-slm, .msho-sml {display: none;}
-	.msho-mso, .msho-mos, .msho-som, .msho-smo, .msho-oms, .msho-osm {display: inherit;}
-	.msho-sol, .msho-slo, .msho-ols, .msho-osl, .msho-lso, .msho-los {display: inherit;}
-
-	.mhid-o {display: none;}
-	.mhid-l {display: inherit;}
-	.mhid-m {display: inherit;}
-	.mhid-s {display: inherit;}
-	.mhid-om, .mhid-mo {display: none;}
-	.mhid-ls, .mhid-sl {display: inherit;}
-	.mhid-os, .mhid-so {display: none;}
-	.mhid-ml, .mhid-lm {display: inherit;}
-	.mhid-ol, .mhid-lo {display: none;}
-	.mhid-sm, .mhid-ms {display: inherit;}
-	.mhid-olm, .mhid-oml, .mhid-lmo, .mhid-lom, .mhid-mol, .mhid-mlo {display: none;}
-	.mhid-lms, .mhid-lsm, .mhid-msl, .mhid-mls, .mhid-slm, .mhid-sml {display: inherit;}
-	.mhid-mso, .mhid-mos, .mhid-som, .mhid-smo, .mhid-oms, .mhid-osm {display: none;}
-	.mhid-sol, .mhid-slo, .mhid-ols, .mhid-osl, .mhid-lso, .mhid-los {display: none;}
 }
 
 /*---------------------------------------------------------------------------------
@@ -1203,7 +1115,8 @@
 	phone <= 768px
 ---------------------------------------------------------------------------------*/
 @media (min-width: 768px) {
-	/* numbers */
+
+	/* box */
 	.mbox0 {flex: 1}
 	.mbox1, .mbox1-1 {flex-basis: 100%;}
 	.mbox2-1 {flex-basis: 50%;}
@@ -1519,37 +1432,6 @@
 	.mneg1-rl, .mneg1-lr {margin-left: -1.0rem; margin-right: -1.0rem;}
 	.mneg2-rl, .mneg2-lr {margin-left: -2.0rem; margin-right: -2.0rem;}
 	.mneg3-rl, .mneg3-lr {margin-left: -3.0rem; margin-right: -3.0rem;}
-
-	/* show hide */
-	.msho-o {display: none;}
-	.msho-l {display: none;}
-	.msho-m {display: inherit;}
-	.msho-s {display: none;}
-	.msho-om, .msho-mo {display: inherit;}
-	.msho-ls, .msho-sl {display: none;}
-	.msho-os, .msho-so {display: none;}
-	.msho-ml, .msho-lm {display: inherit;}
-	.msho-ol, .msho-lo {display: none;}
-	.msho-sm, .msho-ms {display: inherit;}
-	.msho-olm, .msho-oml, .msho-lmo, .msho-lom, .msho-mol, .msho-mlo {display: inherit;}
-	.msho-lms, .msho-lsm, .msho-msl, .msho-mls, .msho-slm, .msho-sml {display: inherit;}
-	.msho-mso, .msho-mos, .msho-som, .msho-smo, .msho-oms, .msho-osm {display: inherit;}
-	.msho-sol, .msho-slo, .msho-ols, .msho-osl, .msho-lso, .msho-los {display: none;}
-
-	.mhid-o {display: inherit;}
-	.mhid-l {display: inherit;}
-	.mhid-m {display: none;}
-	.mhid-s {display: inherit;}
-	.mhid-om, .mhid-mo {display: none;}
-	.mhid-ls, .mhid-sl {display: inherit;}
-	.mhid-os, .mhid-so {display: inherit;}
-	.mhid-ml, .mhid-lm {display: none;}
-	.mhid-ol, .mhid-lo {display: inherit;}
-	.mhid-sm, .mhid-ms {display: none;}
-	.mhid-olm, .mhid-oml, .mhid-lmo, .mhid-lom, .mhid-mol, .mhid-mlo {display: none;}
-	.mhid-lms, .mhid-lsm, .mhid-msl, .mhid-mls, .mhid-slm, .mhid-sml {display: none;}
-	.mhid-mso, .mhid-mos, .mhid-som, .mhid-smo, .mhid-oms, .mhid-osm {display: none;}
-	.mhid-sol, .mhid-slo, .mhid-ols, .mhid-osl, .mhid-lso, .mhid-los {display: inherit;}
 }
 
 /*---------------------------------------------------------------------------------
@@ -1557,7 +1439,8 @@
 	phone <= 768px
 ---------------------------------------------------------------------------------*/
 @media (min-width: 768px) {
-	/* numbers */
+
+	/* box */
 	.sbox0 {flex: 1}
 	.sbox1, .sbox1-1 {flex-basis: 100%;}
 	.sbox2-1 {flex-basis: 50%;}
@@ -1873,37 +1756,172 @@
 	.sneg1-rl, .sneg1-lr {margin-left: -1.0rem; margin-right: -1.0rem;}
 	.sneg2-rl, .sneg2-lr {margin-left: -2.0rem; margin-right: -2.0rem;}
 	.sneg3-rl, .sneg3-lr {margin-left: -3.0rem; margin-right: -3.0rem;}
+}
 
-	/* show hide */
-	.ssho-o {display: none;}
-	.ssho-l {display: none;}
-	.ssho-m {display: none;}
-	.ssho-s {display: inherit;}
-	.ssho-om, .ssho-mo {display: none;}
-	.ssho-ls, .ssho-sl {display: inherit;}
-	.ssho-os, .ssho-so {display: inherit;}
-	.ssho-ml, .ssho-lm {display: none;}
-	.ssho-ol, .ssho-lo {display: none;}
-	.ssho-sm, .ssho-ms {display: inherit;}
-	.ssho-olm, .ssho-oml, .ssho-lmo, .ssho-lom, .ssho-mol, .ssho-mlo {display: none;}
-	.ssho-lms, .ssho-lsm, .ssho-msl, .ssho-mls, .ssho-slm, .ssho-sml {display: inherit;}
-	.ssho-mso, .ssho-mos, .ssho-som, .ssho-smo, .ssho-oms, .ssho-osm {display: none;}
-	.ssho-sol, .ssho-slo, .ssho-ols, .ssho-osl, .ssho-lso, .ssho-los {display: inherit;}
+/*=================================================================================
+	responsive
+=================================================================================*/
+/*	over [o] 
+/*	over desktop >= 1201px
+---------------------------------------------------------------------------------*/
+.sho-o {display: inherit;}
+.sho-l {display: none;}
+.sho-m {display: none;}
+.sho-s {display: none;}
 
-	.shid-o {display: inherit;}
-	.shid-l {display: inherit;}
-	.shid-m {display: inherit;}
-	.shid-s {display: none;}
-	.shid-om, .shid-mo {display: inherit;}
-	.shid-ls, .shid-sl {display: none;}
-	.shid-os, .shid-so {display: none;}
-	.shid-ml, .shid-lm {display: inherit;}
-	.shid-ol, .shid-lo {display: inherit;}
-	.shid-sm, .shid-ms {display: none;}
-	.shid-olm, .shid-oml, .shid-lmo, .shid-lom, .shid-mol, .shid-mlo {display: inherit;}
-	.shid-lms, .shid-lsm, .shid-msl, .shid-mls, .shid-slm, .shid-sml {display: none;}
-	.shid-mso, .shid-mos, .shid-som, .shid-smo, .shid-oms, .shid-osm {display: none;}
-	.shid-sol, .shid-slo, .shid-ols, .shid-osl, .shid-lso, .shid-los {display: none;}
+.sho-om, .sho-mo {display: inherit;}
+.sho-ls, .sho-sl {display: none;}
+.sho-os, .sho-so {display: inherit;}
+.sho-ml, .sho-lm {display: none;}
+.sho-ol, .sho-lo {display: inherit;}
+.sho-sm, .sho-ms {display: none;}
+
+.sho-olm, .sho-oml, .sho-lmo, .sho-lom, .sho-mol, .sho-mlo {display: inherit;}
+.sho-lms, .sho-lsm, .sho-msl, .sho-mls, .sho-slm, .sho-sml {display: none;}
+.sho-mso, .sho-mos, .sho-som, .sho-smo, .sho-oms, .sho-osm {display: inherit;}
+.sho-sol, .sho-slo, .sho-ols, .sho-osl, .sho-lso, .sho-los {display: inherit;}
+
+.hid-o {display: none;}
+.hid-l {display: inherit;}
+.hid-m {display: inherit;}
+.hid-s {display: inherit;}
+
+.hid-om, .hid-mo {display: none;}
+.hid-ls, .hid-sl {display: inherit;}
+.hid-os, .hid-so {display: none;}
+.hid-ml, .hid-lm {display: inherit;}
+.hid-ol, .hid-lo {display: none;}
+.hid-sm, .hid-ms {display: inherit;}
+
+.hid-olm, .hid-oml, .hid-lmo, .hid-lom, .hid-mol, .hid-mlo {display: none;}
+.hid-lms, .hid-lsm, .hid-msl, .hid-mls, .hid-slm, .hid-sml {display: inherit;}
+.hid-mso, .hid-mos, .hid-som, .hid-smo, .hid-oms, .hid-osm {display: none;}
+.hid-sol, .hid-slo, .hid-ols, .hid-osl, .hid-lso, .hid-los {display: none;}
+
+/*---------------------------------------------------------------------------------
+	large [l] 
+	desktop  <= 1200px
+---------------------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+	body{background: coral}
+
+	.sho-o {display: none;}
+	.sho-l {display: inherit;}
+	.sho-m {display: none;}
+	.sho-s {display: none;}
+
+	.sho-om, .sho-mo {display: none;}
+	.sho-ls, .sho-sl {display: inherit;}
+	.sho-os, .sho-so {display: none;}
+	.sho-ml, .sho-lm {display: inherit;}
+	.sho-ol, .sho-lo {display: inherit;}
+	.sho-sm, .sho-ms {display: none;}
+
+	.sho-olm, .sho-oml, .sho-lmo, .sho-lom, .sho-mol, .sho-mlo {display: inherit;}
+	.sho-lms, .sho-lsm, .sho-msl, .sho-mls, .sho-slm, .sho-sml {display: inherit;}
+	.sho-mso, .sho-mos, .sho-som, .sho-smo, .sho-oms, .sho-osm {display: none;}
+	.sho-sol, .sho-slo, .sho-ols, .sho-osl, .sho-lso, .sho-los {display: inherit;}
+
+	.hid-o {display: inherit;}
+	.hid-l {display: none;}
+	.hid-m {display: inherit;}
+	.hid-s {display: inherit;}
+
+	.hid-om, .hid-mo {display: inherit;}
+	.hid-ls, .hid-sl {display: none;}
+	.hid-os, .hid-so {display: inherit;}
+	.hid-ml, .hid-lm {display: none;}
+	.hid-ol, .hid-lo {display: none;}
+	.hid-sm, .hid-ms {display: inherit;}
+
+	.hid-olm, .hid-oml, .hid-lmo, .hid-lom, .hid-mol, .hid-mlo {display: none;}
+	.hid-lms, .hid-lsm, .hid-msl, .hid-mls, .hid-slm, .hid-sml {display: none;}
+	.hid-mso, .hid-mos, .hid-som, .hid-smo, .hid-oms, .hid-osm {display: inherit;}
+	.hid-sol, .hid-slo, .hid-ols, .hid-osl, .hid-lso, .hid-los {display: none;}
+}
+
+/*---------------------------------------------------------------------------------
+	medium [m] 
+	over desktop <= 992px
+---------------------------------------------------------------------------------*/
+@media (max-width: 992px) {
+	body{background: olive}
+
+	.sho-o {display: none;}
+	.sho-l {display: none;}
+	.sho-m {display: inherit;}
+	.sho-s {display: none;}
+
+	.sho-om, .sho-mo {display: inherit;}
+	.sho-ls, .sho-sl {display: none;}
+	.sho-os, .sho-so {display: none;}
+	.sho-ml, .sho-lm {display: inherit;}
+	.sho-ol, .sho-lo {display: none;}
+	.sho-sm, .sho-ms {display: inherit;}
+
+	.sho-olm, .sho-oml, .sho-lmo, .sho-lom, .sho-mol, .sho-mlo {display: inherit;}
+	.sho-lms, .sho-lsm, .sho-msl, .sho-mls, .sho-slm, .sho-sml {display: inherit;}
+	.sho-mso, .sho-mos, .sho-som, .sho-smo, .sho-oms, .sho-osm {display: inherit;}
+	.sho-sol, .sho-slo, .sho-ols, .sho-osl, .sho-lso, .sho-los {display: none;}
+
+	.hid-o {display: inherit;}
+	.hid-l {display: inherit;}
+	.hid-m {display: none;}
+	.hid-s {display: inherit;}
+
+	.hid-om, .hid-mo {display: none;}
+	.hid-ls, .hid-sl {display: inherit;}
+	.hid-os, .hid-so {display: inherit;}
+	.hid-ml, .hid-lm {display: none;}
+	.hid-ol, .hid-lo {display: inherit;}
+	.hid-sm, .hid-ms {display: none;}
+
+	.hid-olm, .hid-oml, .hid-lmo, .hid-lom, .hid-mol, .hid-mlo {display: none;}
+	.hid-lms, .hid-lsm, .hid-msl, .hid-mls, .hid-slm, .hid-sml {display: none;}
+	.hid-mso, .hid-mos, .hid-som, .hid-smo, .hid-oms, .hid-osm {display: none;}
+	.hid-sol, .hid-slo, .hid-ols, .hid-osl, .hid-lso, .hid-los {display: inherit;}
+}
+
+/*---------------------------------------------------------------------------------
+	small [s] 
+	phone <= 768px
+---------------------------------------------------------------------------------*/
+@media (max-width: 768px) {
+	body{background: royalblue}
+
+	.sho-o {display: none;}
+	.sho-l {display: none;}
+	.sho-m {display: none;}
+	.sho-s {display: inherit;}
+
+	.sho-om, .sho-mo {display: none;}
+	.sho-ls, .sho-sl {display: inherit;}
+	.sho-os, .sho-so {display: inherit;}
+	.sho-ml, .sho-lm {display: none;}
+	.sho-ol, .sho-lo {display: none;}
+	.sho-sm, .sho-ms {display: inherit;}
+
+	.sho-olm, .sho-oml, .sho-lmo, .sho-lom, .sho-mol, .sho-mlo {display: none;}
+	.sho-lms, .sho-lsm, .sho-msl, .sho-mls, .sho-slm, .sho-sml {display: inherit;}
+	.sho-mso, .sho-mos, .sho-som, .sho-smo, .sho-oms, .sho-osm {display: inherit;}
+	.sho-sol, .sho-slo, .sho-ols, .sho-osl, .sho-lso, .sho-los {display: inherit;}
+
+	.hid-o {display: inherit;}
+	.hid-l {display: inherit;}
+	.hid-m {display: inherit;}
+	.hid-s {display: none;}
+
+	.hid-om, .hid-mo {display: inherit;}
+	.hid-ls, .hid-sl {display: none;}
+	.hid-os, .hid-so {display: none;}
+	.hid-ml, .hid-lm {display: inherit;}
+	.hid-ol, .hid-lo {display: inherit;}
+	.hid-sm, .hid-ms {display: none;}
+
+	.hid-olm, .hid-oml, .hid-lmo, .hid-lom, .hid-mol, .hid-mlo {display: inherit;}
+	.hid-lms, .hid-lsm, .hid-msl, .hid-mls, .hid-slm, .hid-sml {display: none;}
+	.hid-mso, .hid-mos, .hid-som, .hid-smo, .hid-oms, .hid-osm {display: none;}
+	.hid-sol, .hid-slo, .hid-ols, .hid-osl, .hid-lso, .hid-los {display: none;}
 }
 
 /*=================================================================================
