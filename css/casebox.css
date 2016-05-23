@@ -63,6 +63,10 @@
 {
 	display: inline-block;
 }
+.imw
+{
+	width: 100%;
+}
 
 .hor-l, .hor-r, .hor-c, .hor-e, .hor-a,
 .ver-t, .ver-b, .ver-c, .ver-s
