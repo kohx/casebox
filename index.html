@@ -24,10 +24,13 @@
 				font-family: 'Rajdhani', sans-serif;
 				min-height: 100%; /* for footer */
 				position: relative; /* for footer */
-				font-size: calc(62.5% + 0.25vw);} /* for fontsize */
+				font-size: calc(62.5% + 0.25vw); /* for fontsize */
+				/* 1920pxで24px 24px / 1920px = 0.0125 よって 1.25vw */
+			}
 			body
 			{
 				font-size: 1.4rem;
+				line-height: 1.4;
 				margin-bottom: 5em;
 			}
 			.wrapper
@@ -588,7 +591,7 @@
 			</section>
 
 			<!--margin padding-->
-			<section>
+			<section class="mar3-b">
 				<h2 class="title">margin padding</h2>
 
 				<div class="case bor mar1-b">
@@ -878,6 +881,403 @@
 					</div>
 				</div>
 			</section>
+
+			<style>
+				.__1 {background: #1194f6; color: #1194f6;}
+				.__1 .__inner { border: 1px solid #1194f6; background: #ffffff;}
+				.__2 { background: #00bcd6; color: #00bcd6;}
+				.__2 .__inner { border: 1px solid #00bcd6; background: #ffffff;}
+				.__3 { background: #6734ba; color: #6734ba;}
+				.__3 .__inner { border: 1px solid #6734ba; background: #ffffff;}
+				.__4 { background: #ff5722; color: #ff5722;}
+				.__4 .__inner { border: 1px solid #ff5722; background: #ffffff;}
+				.__5 { background: #9d1bb2; color: #9d1bb2;}
+				.__5 .__inner { border: 1px solid #9d1bb2; background: #ffffff;}
+				.__6 { background: #f90; color: #f90;}
+				.__6 .__inner { border: 1px solid #f90; background: #ffffff;}
+				.__7 { background: #f7412d; color: #f7412d;}
+				.__8 { background: #009788; color: #009788;}
+				.__8 .__inner { border: 1px solid #009788; background: #ffffff;}
+				.__9 { background: #ec1561; color: #ec1561;}
+				.__10 { background: #47b04b; color: #47b04b;}
+				.__10 .__inner:not(:last-child) { border-right: 1px solid #63bc66;}
+				.__10-3 { background: #47b04b; color: #47b04b;}
+				.__10-3 .__inner:not(:last-child) { border-bottom: 1px solid #63bc66;}
+
+				.__outer
+				{
+					border-radius: 10px;
+				}
+				.__height
+				{
+					height: 50vh;
+				}
+				.__title
+				{
+					font-size: 1.6rem;
+					font-weight: bold;
+					margin-bottom: 0.2rem;
+				}
+				.__width
+				{
+					width: 60%;
+				}
+				.__fontSmall
+				{
+					font-size: 1.2rem;
+					line-height: 1.2;
+				}
+				.__fontWhite
+				{
+					color: #fff;
+				}
+			</style>
+
+			<section class="__outer __1 case mar3-b pad1">
+				<div class="__height case">
+					<div class="__inner box2-1 case ver-c hor-c">
+						<div class="box2-1">
+							<div class="pad3-lr">
+								<img class="imr imw" src="image/image-s.png" />
+							</div>
+							<p class="pad1">case box case box box case box box box</p>
+						</div>
+					</div>
+
+					<div class="__inner box2-1 ver-c hor-c">
+						<div class="__width">
+							Term-sheet responsive web design accelerator ramen low hanging fruit prototype buzz startup direct mailing rockstar venture. Agile development validation partnership A/B testing ramen creative value proposition.
+							Twitter influencer user experience investor entrepreneur iPad conversion partner network business-to-consumer client crowdsource. Focus gamification sales buyer.
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="__outer __2 case mar3-b pad1">
+				<div class="__height case">
+					<div class="__inner box4-1 case ver-b hor-c">
+						<div class="box2-1">
+							<img class="imw imr" src="image/image-s.png" />
+							<p class="pad1">case box case box box case box box box</p>
+						</div>
+					</div>
+
+					<div class="__inner box4-3 ver-c hor-c">
+						<div class="__width">
+							Term-sheet responsive web design accelerator ramen low hanging fruit prototype buzz startup direct mailing rockstar venture. Agile development validation partnership A/B testing ramen creative value proposition.
+							Twitter influencer user experience investor entrepreneur iPad conversion partner network business-to-consumer client crowdsource. Focus gamification sales buyer.
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="__outer __3 case mar3-b pad1">
+				<div class="__inner box1 case ver-t pad1">
+					<div class="box12-1 suf12-5 __title">logo</div>
+					<div class="box12-2 txt-c">first</div>
+					<div class="box12-2 txt-c">second</div>
+					<div class="box12-2 txt-c">third</div>
+				</div>
+
+				<div class="__height case">
+					<div class="__inner box1 ver-c hor-c">
+						<div class="__width">
+							Term-sheet responsive web design accelerator ramen low hanging fruit prototype buzz startup direct mailing rockstar venture. Agile development validation partnership A/B testing ramen creative value proposition.
+							Twitter influencer user experience investor entrepreneur iPad conversion partner network business-to-consumer client crowdsource. Focus gamification sales buyer.
+						</div>
+					</div>
+				</div>
+
+				<div class="__inner box1 pad1 hor-c">
+					<ul class="case">
+						<li class="pad1-lr">first</li>
+						<li class="pad1-lr">second</li>
+						<li class="pad1-lr">third</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="__outer __4 mar3-b pad1">
+
+				<div class="__height __inner box4-1 case ver-c hor-c">
+					<div class="box5-1">
+						<div class="pad3-lr">
+							<img class="imw imr" src="image/image-s.png" />
+						</div>
+						<p class="pad1 txt-c">case box case box box case box box box</p>
+					</div>
+				</div>
+
+				<div class="__inner box1 pad1 hor-c">
+					<ul class="case">
+						<li class="pad1-lr">first</li>
+						<li class="pad1-lr">second</li>
+						<li class="pad1-lr">third</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="__outer __5 case mar3-b pad1">
+				<div class="__inner box3-2 pad2">
+					<div class="__title">Pitch Infrastructure</div>
+					<div>
+						Founders alpha direct mailing first mover advantage. Ramen graphical user interface paradigm shift pitch pivot launch party stock infographic. Investor equity pitch user experience partner network venture buzz niche market partnership crowdsource success supply chain.
+					</div>
+				</div>
+				<div class="__inner box3-1 pad2">
+					<div class="__title">Pitch Infrastructure</div>
+					<div>
+						Founders alpha direct mailing first mover advantage. Ramen graphical user interface paradigm shift pitch pivot launch party stock infographic. Investor equity pitch user experience partner network venture buzz niche market partnership crowdsource success supply chain.
+					</div>
+				</div>
+				<div class="__inner box3-1 pad2">
+					<div class="__title">Pitch Infrastructure</div>
+					<div>
+						Founders alpha direct mailing first mover advantage. Ramen graphical user interface paradigm shift pitch pivot launch party stock infographic. Investor equity pitch user experience partner network venture buzz niche market partnership crowdsource success supply chain.
+					</div>
+				</div>
+				<div class="__inner box3-1 pad2">
+					<div class="__title">Pitch Infrastructure</div>
+					<div>
+						Founders alpha direct mailing first mover advantage. Ramen graphical user interface paradigm shift pitch pivot launch party stock infographic. Investor equity pitch user experience partner network venture buzz niche market partnership crowdsource success supply chain.
+					</div>
+				</div>
+				<div class="__inner box3-1 pad2">
+					<div class="__title">Pitch Infrastructure</div>
+					<div>
+						Founders alpha direct mailing first mover advantage. Ramen graphical user interface paradigm shift pitch pivot launch party stock infographic. Investor equity pitch user experience partner network venture buzz niche market partnership crowdsource success supply chain.
+					</div>
+				</div>
+			</section>
+
+			<section class="__outer __6 mar3-b pad1">
+				<div class="case">
+
+					<div class="__inner box1 case pad1">
+						<div class="box12-1 suf12-5 __title">logo</div>
+						<div class="box12-2 txt-c">first</div>
+						<div class="box12-2 txt-c">second</div>
+						<div class="box12-2 txt-c">third</div>
+					</div>
+
+					<div class="__inner box5-1 case ver-b hor-c">
+						<div class="box2-1">
+
+						</div>
+					</div>
+
+					<div class="__height __inner box5-3 pad2">
+						<div class="__title">Pitch Infrastructure</div>
+
+						<div>
+							Term-sheet responsive web design accelerator ramen low hanging fruit prototype buzz startup direct mailing rockstar venture. Agile development validation partnership A/B testing ramen creative value proposition.
+							Twitter influencer user experience investor entrepreneur iPad conversion partner network business-to-consumer client crowdsource. Focus gamification sales buyer.
+						</div>
+					</div>
+
+					<div class="__inner box5-1 case ver-b hor-c">
+						<div class="box2-1">
+
+						</div>
+					</div>
+
+					<div class="__inner box1 pad1 hor-c">
+						<ul class="case">
+							<li class="pad1-lr">first</li>
+							<li class="pad1-lr">second</li>
+							<li class="pad1-lr">third</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="__outer __7 mar3-b pad1">
+				<div class="__height ver-c hor-c">
+					<div class="box5-1">
+						<div class="pad3-ltr">
+							<img class="imw imr" src="image/image-s.png" />
+						</div>
+						<p class="__fontWhite pad1">case box case box box case box box box</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="__outer __8 mar3-b pad3">
+				<div class="case">
+					<div class="box3-1 case pad1">
+						<div class="__inner">
+							<img class="imw" src="image/image.png" />
+							<div class="__title pad2-tlr">Pitch Infrastructure</div>
+							<div class="pad2-blr">
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+							</div>
+						</div>
+					</div>
+
+					<div class="box3-1 case pad1">
+						<div class="__inner">
+							<img class="imw" src="image/image.png" />
+							<div class="__title pad2-tlr">Pitch Infrastructure</div>
+							<div class="pad2-blr">
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+							</div>
+						</div>
+					</div>
+
+					<div class="box3-1 case pad1">
+						<div class="__inner">
+							<img class="imw" src="image/image.png" />
+							<div class="__title pad2-tlr">Pitch Infrastructure</div>
+							<div class="pad2-blr">
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="__outer __9 mar3-b case pad3">
+				<div class="box2-1">
+					<div class="mar1"><img class="imw" src="image/image-s.png" /></div>
+				</div>
+
+				<div class="box2-1 case">
+					<div class="box2-1">
+						<div class="mar1"><img class="imw" src="image/image-s.png" /></div>
+					</div>
+					<div class="box2-1">
+						<div class="mar1"><img class="imw" src="image/image-s.png" /></div>
+					</div>
+					<div class="box2-1">
+						<div class="mar1"><img class="imw" src="image/image-s.png" /></div>
+					</div>
+					<div class="box2-1">
+						<div class="mar1"><img class="imw" src="image/image-s.png" /></div>
+					</div>
+				</div>
+			</div>
+
+			<section class="__outer __10 mar3-b">
+				<div class="case pad1">
+					<div class="box3-1 __inner case pad1 __fontWhite">
+						<div class="box5-1">
+							<img class="imw imr" src="image/image-s.png" />
+						</div>
+						<div class="box5-4 pad1-lr">
+							<div class="__title">Pitch Infrastructure</div>
+							<div class="__fontSmall">
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+							</div>
+						</div>
+					</div>
+					<div class="box3-1 __inner case pad1 __fontWhite">
+						<div class="box5-1">
+							<img class="imw imr" src="image/image-s.png" />
+						</div>
+						<div class="box5-4 pad1-lr">
+							<div class="__title">Pitch Infrastructure</div>
+							<div class="__fontSmall">
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+							</div>
+						</div>
+					</div>
+					<div class="box3-1 __inner case pad1 __fontWhite">
+						<div class="box5-1">
+							<img class="imw imr" src="image/image-s.png" />
+						</div>
+						<div class="box5-4 pad1-lr">
+							<div class="__title">Pitch Infrastructure</div>
+							<div class="__fontSmall">
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="__outer __10 mar3-b">
+				<div class="case pad1">
+					<div class="box3-1 __inner case pad1 hor-c __fontWhite">
+						<div class="box3-1 mar1-b">
+							<img class="imw imr" src="image/image-s.png" />
+						</div>
+						<div class="box1 txt-c pad1-lr">
+							<div class="__title">Pitch Infrastructure</div>
+							<div class="__fontSmall">
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+							</div>
+						</div>
+					</div>
+					<div class="box3-1 __inner case pad1 hor-c __fontWhite">
+						<div class="box3-1 mar1-b">
+							<img class="imw imr" src="image/image-s.png" />
+						</div>
+						<div class="box1 txt-c pad1-lr">
+							<div class="__title">Pitch Infrastructure</div>
+							<div class="__fontSmall">
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+							</div>
+						</div>
+					</div><div class="box3-1 __inner case pad1 hor-c __fontWhite">
+						<div class="box3-1 mar1-b">
+							<img class="imw imr" src="image/image-s.png" />
+						</div>
+						<div class="box1 txt-c pad1-lr">
+							<div class="__title">Pitch Infrastructure</div>
+							<div class="__fontSmall">
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="__outer __10-3 mar3-b">
+				<div class="case ver-c pad1 __inner __fontWhite">
+						<div class="box5-1">
+							<img class="imw imr pad2" src="image/image-s.png" />
+						</div>
+						<div class="box5-4">
+							<div class="__title">Pitch Infrastructure</div>
+							<div class="__fontSmall">
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+								<br />
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+							</div>
+						</div>
+				</div>
+				<div class="case rev ver-c pad1 __inner __fontWhite">
+						<div class="box5-1">
+							<img class="imw imr pad2" src="image/image-s.png" />
+						</div>
+						<div class="box5-4 txt-r">
+							<div class="__title">Pitch Infrastructure</div>
+							<div class="__fontSmall">
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+								<br />
+								Founders alpha direct mailing first mover advantage. 
+								Founders alpha direct mailing first mover advantage. 
+							</div>
+						</div>
+				</div>
+			</section>
+
+			<!--https://flexbox.webflow.com/#split-screen-->
+
 		</div>
 
 		<footer class="footer ver-c hor-c bor-t">
