@@ -903,10 +903,18 @@
 				.__10 .__inner:not(:last-child) { border-right: 1px solid #63bc66;}
 				.__10-3 { background: #47b04b; color: #47b04b;}
 				.__10-3 .__inner:not(:last-child) { border-bottom: 1px solid #63bc66;}
+				.__11 { background: #00a7f7; color: #00a7f7;}
+				.__11 .__inner {background: #ffffff;}
+				.__11 .__frame {background: rgba(0,167,247,0.5);}
+				.__11 .__button {width: 100%; background: #ffffff; border: 1px solid #00a7f7; border-radius: 4px; padding: .5rem; text-align: center; text-decoration: none; color: #00a7f7; display: block;}
 
 				.__outer
 				{
 					border-radius: 10px;
+				}
+				.__round
+				{
+					border-radius: 6px;
 				}
 				.__height
 				{
@@ -927,18 +935,35 @@
 					font-size: 1.2rem;
 					line-height: 1.2;
 				}
+				.__frame
+				{
+					width: 10vw;
+					height: 10vw;
+				}
 				.__fontWhite
 				{
 					color: #fff;
 				}
+				.__scale
+				{
+					-moz-transform: scale(1.1);
+					-webkit-transform: scale(1.1);
+					-o-transform: scale(1.1);
+					-ms-transform: scale(1.1);
+					transform: scale(1.1);
+				}
 			</style>
+
+			<div class="pad1">
+				<a href="https://flexbox.webflow.com/">flexbox.webflow.com</a>
+			</div>
 
 			<section class="__outer __1 case mar3-b pad1">
 				<div class="__height case">
 					<div class="__inner box2-1 case ver-c hor-c">
 						<div class="box2-1">
 							<div class="pad3-lr">
-								<img class="imr imw" src="image/image-s.png" />
+								<img class="imr imw" src="image/image.svg" />
 							</div>
 							<p class="pad1">case box case box box case box box box</p>
 						</div>
@@ -957,7 +982,7 @@
 				<div class="__height case">
 					<div class="__inner box4-1 case ver-b hor-c">
 						<div class="box2-1">
-							<img class="imw imr" src="image/image-s.png" />
+							<img class="imw imr" src="image/image.svg" />
 							<p class="pad1">case box case box box case box box box</p>
 						</div>
 					</div>
@@ -1002,7 +1027,7 @@
 				<div class="__height __inner box4-1 case ver-c hor-c">
 					<div class="box5-1">
 						<div class="pad3-lr">
-							<img class="imw imr" src="image/image-s.png" />
+							<img class="imw imr" src="image/image.svg" />
 						</div>
 						<p class="pad1 txt-c">case box case box box case box box box</p>
 					</div>
@@ -1095,7 +1120,7 @@
 				<div class="__height ver-c hor-c">
 					<div class="box5-1">
 						<div class="pad3-ltr">
-							<img class="imw imr" src="image/image-s.png" />
+							<img class="imw imr" src="image/image.svg" />
 						</div>
 						<p class="__fontWhite pad1">case box case box box case box box box</p>
 					</div>
@@ -1106,7 +1131,7 @@
 				<div class="case">
 					<div class="box3-1 case pad1">
 						<div class="__inner">
-							<img class="imw" src="image/image.png" />
+							<img class="imw" src="image/image.svg" />
 							<div class="__title pad2-tlr">Pitch Infrastructure</div>
 							<div class="pad2-blr">
 								Founders alpha direct mailing first mover advantage. 
@@ -1117,7 +1142,7 @@
 
 					<div class="box3-1 case pad1">
 						<div class="__inner">
-							<img class="imw" src="image/image.png" />
+							<img class="imw" src="image/image.svg" />
 							<div class="__title pad2-tlr">Pitch Infrastructure</div>
 							<div class="pad2-blr">
 								Founders alpha direct mailing first mover advantage. 
@@ -1131,7 +1156,7 @@
 
 					<div class="box3-1 case pad1">
 						<div class="__inner">
-							<img class="imw" src="image/image.png" />
+							<img class="imw" src="image/image.svg" />
 							<div class="__title pad2-tlr">Pitch Infrastructure</div>
 							<div class="pad2-blr">
 								Founders alpha direct mailing first mover advantage. 
@@ -1145,21 +1170,21 @@
 
 			<div class="__outer __9 mar3-b case pad3">
 				<div class="box2-1">
-					<div class="mar1"><img class="imw" src="image/image-s.png" /></div>
+					<div class="mar1"><img class="imw" src="image/image.svg" /></div>
 				</div>
 
 				<div class="box2-1 case">
 					<div class="box2-1">
-						<div class="mar1"><img class="imw" src="image/image-s.png" /></div>
+						<div class="mar1"><img class="imw" src="image/image.svg" /></div>
 					</div>
 					<div class="box2-1">
-						<div class="mar1"><img class="imw" src="image/image-s.png" /></div>
+						<div class="mar1"><img class="imw" src="image/image.svg" /></div>
 					</div>
 					<div class="box2-1">
-						<div class="mar1"><img class="imw" src="image/image-s.png" /></div>
+						<div class="mar1"><img class="imw" src="image/image.svg" /></div>
 					</div>
 					<div class="box2-1">
-						<div class="mar1"><img class="imw" src="image/image-s.png" /></div>
+						<div class="mar1"><img class="imw" src="image/image.svg" /></div>
 					</div>
 				</div>
 			</div>
@@ -1168,7 +1193,7 @@
 				<div class="case pad1">
 					<div class="box3-1 __inner case pad1 __fontWhite">
 						<div class="box5-1">
-							<img class="imw imr" src="image/image-s.png" />
+							<img class="imw imr" src="image/image.svg" />
 						</div>
 						<div class="box5-4 pad1-lr">
 							<div class="__title">Pitch Infrastructure</div>
@@ -1180,7 +1205,7 @@
 					</div>
 					<div class="box3-1 __inner case pad1 __fontWhite">
 						<div class="box5-1">
-							<img class="imw imr" src="image/image-s.png" />
+							<img class="imw imr" src="image/image.svg" />
 						</div>
 						<div class="box5-4 pad1-lr">
 							<div class="__title">Pitch Infrastructure</div>
@@ -1192,7 +1217,7 @@
 					</div>
 					<div class="box3-1 __inner case pad1 __fontWhite">
 						<div class="box5-1">
-							<img class="imw imr" src="image/image-s.png" />
+							<img class="imw imr" src="image/image.svg" />
 						</div>
 						<div class="box5-4 pad1-lr">
 							<div class="__title">Pitch Infrastructure</div>
@@ -1208,7 +1233,7 @@
 				<div class="case pad1">
 					<div class="box3-1 __inner case pad1 hor-c __fontWhite">
 						<div class="box3-1 mar1-b">
-							<img class="imw imr" src="image/image-s.png" />
+							<img class="imw imr" src="image/image.svg" />
 						</div>
 						<div class="box1 txt-c pad1-lr">
 							<div class="__title">Pitch Infrastructure</div>
@@ -1220,7 +1245,7 @@
 					</div>
 					<div class="box3-1 __inner case pad1 hor-c __fontWhite">
 						<div class="box3-1 mar1-b">
-							<img class="imw imr" src="image/image-s.png" />
+							<img class="imw imr" src="image/image.svg" />
 						</div>
 						<div class="box1 txt-c pad1-lr">
 							<div class="__title">Pitch Infrastructure</div>
@@ -1231,7 +1256,7 @@
 						</div>
 					</div><div class="box3-1 __inner case pad1 hor-c __fontWhite">
 						<div class="box3-1 mar1-b">
-							<img class="imw imr" src="image/image-s.png" />
+							<img class="imw imr" src="image/image.svg" />
 						</div>
 						<div class="box1 txt-c pad1-lr">
 							<div class="__title">Pitch Infrastructure</div>
@@ -1245,38 +1270,72 @@
 			</section>
 			<section class="__outer __10-3 mar3-b">
 				<div class="case ver-c pad1 __inner __fontWhite">
-						<div class="box5-1">
-							<img class="imw imr pad2" src="image/image-s.png" />
+					<div class="box5-1">
+						<img class="imw imr pad2" src="image/image.svg" />
+					</div>
+					<div class="box5-4">
+						<div class="__title">Pitch Infrastructure</div>
+						<div class="__fontSmall">
+							Founders alpha direct mailing first mover advantage. 
+							Founders alpha direct mailing first mover advantage. 
+							<br />
+							Founders alpha direct mailing first mover advantage. 
+							Founders alpha direct mailing first mover advantage. 
 						</div>
-						<div class="box5-4">
-							<div class="__title">Pitch Infrastructure</div>
-							<div class="__fontSmall">
-								Founders alpha direct mailing first mover advantage. 
-								Founders alpha direct mailing first mover advantage. 
-								<br />
-								Founders alpha direct mailing first mover advantage. 
-								Founders alpha direct mailing first mover advantage. 
-							</div>
-						</div>
+					</div>
 				</div>
 				<div class="case rev ver-c pad1 __inner __fontWhite">
-						<div class="box5-1">
-							<img class="imw imr pad2" src="image/image-s.png" />
+					<div class="box5-1">
+						<img class="imw imr pad2" src="image/image.svg" />
+					</div>
+					<div class="box5-4 txt-r">
+						<div class="__title">Pitch Infrastructure</div>
+						<div class="__fontSmall">
+							Founders alpha direct mailing first mover advantage. 
+							Founders alpha direct mailing first mover advantage. 
+							<br />
+							Founders alpha direct mailing first mover advantage. 
+							Founders alpha direct mailing first mover advantage. 
 						</div>
-						<div class="box5-4 txt-r">
-							<div class="__title">Pitch Infrastructure</div>
-							<div class="__fontSmall">
-								Founders alpha direct mailing first mover advantage. 
-								Founders alpha direct mailing first mover advantage. 
-								<br />
-								Founders alpha direct mailing first mover advantage. 
-								Founders alpha direct mailing first mover advantage. 
-							</div>
-						</div>
+					</div>
 				</div>
 			</section>
 
-			<!--https://flexbox.webflow.com/#split-screen-->
+			<section class="__outer case __11 pad2 mar3-b">
+				<div class="box3-1 pad1">
+					<div class="__inner case hor-c pad2 __round">
+						<div class="__title">Pitch Infrastructure</div>
+						<div class="__frame mar1-tb imr hor-c ver-c __fontWhite">$10</div>
+						<div class="__fontSmall mar1-b">
+							Founders alpha direct mailing first mover advantage. 
+							Founders alpha direct mailing first mover advantage. 
+						</div>
+						<a href="#" class="__button">asdf</a>
+					</div>
+				</div>
+				<div class="box3-1 pad1">
+					<div class="__inner case hor-c pad2 __round __scale">
+						<div class="__title">Pitch Infrastructure</div>
+						<div class="__frame mar1-tb imr hor-c ver-c __fontWhite">$10</div>
+						<div class="__fontSmall mar1-b">
+							Founders alpha direct mailing first mover advantage. 
+							Founders alpha direct mailing first mover advantage. 
+						</div>
+						<a href="#" class="__button">asdf</a>
+					</div>
+				</div>
+				<div class="box3-1 pad1">
+					<div class="__inner case hor-c pad2 __round">
+						<div class="__title">Pitch Infrastructure</div>
+						<div class="__frame mar1-tb imr hor-c ver-c __fontWhite">$10</div>
+						<div class="__fontSmall mar1-b">
+							Founders alpha direct mailing first mover advantage. 
+							Founders alpha direct mailing first mover advantage. 
+						</div>
+						<a href="#" class="__button">asdf</a>
+					</div>
+				</div>
+			</section>
 
 		</div>
 
