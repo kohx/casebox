@@ -2,7 +2,7 @@
 css flexbox grid system
 
 				<!DOCTYPE html>
-				<html lang="ja">
+				<html>
 					<head>
 						<title>casebox</title>
 
